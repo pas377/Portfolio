@@ -1,0 +1,21 @@
+$primary-color: black;
+$secondary-color: rgb(192, 130, 255);
+$tertiary-color: rgb(28, 137, 255);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+@function set-text-color($color) {
+    @if (lightness($color) > 40%) {
+        @return #000;
+    } @else {
+        @return #fff;
+    }
+}
