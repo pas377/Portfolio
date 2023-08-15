@@ -10,7 +10,7 @@
   overflow: hidden;
   align-items: center;
   text-align: center;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url("../img/LDBU5660.jpg") center top;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)) url("../img/_MG_6311.jpg") center top;
   background-size: cover;
 }
 .home__name {
@@ -21,7 +21,7 @@
 }
 .home__name--last {
   color: #fff;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .menu-btn {
@@ -30,11 +30,11 @@
   right: 1rem;
   top: 1rem;
   height: 20px;
-  width: 20px;
+  width: 28px;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
-.menu-btn_burger {
+.menu-btn__burger {
   position: absolute;
   right: 0;
   top: 0.5rem;
@@ -43,7 +43,7 @@
   background: #fff;
   transition: all 0.5s ease-in-out;
 }
-.menu-btn_burger::before {
+.menu-btn__burger::before {
   content: "";
   position: absolute;
   top: -8px;
@@ -51,6 +51,26 @@
   height: 3px;
   background: #fff;
   transition: all 0.5s ease-in-out;
+}
+.menu-btn__burger::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  width: 20px;
+  height: 3px;
+  background: #fff;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn__burger.open {
+  transform: rotate(720deg);
+  background: transparent;
+}
+.menu-btn__burger.open::before {
+  transform: rotate(45deg) translate(5px, 8px);
+}
+.menu-btn__burger.open::after {
+  width: 28px;
+  transform: rotate(45deg) translate(5px, 8px);
 }
 
 body {

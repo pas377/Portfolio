@@ -9,8 +9,8 @@
             to bottom,
             rgba($primary-color, 0.3),
             rgba($primary-color, 0)
-        ),
-        url('../img/LDBU5660.jpg') center top;
+        )
+        url('dist/img/_MG_6311.jpg') center top;
     background-size: cover;
 
     &__name {
@@ -21,7 +21,7 @@
 
         &--last {
             color: set-text-color($primary-color);
-            font-weight: 700;
+            font-weight: 400;
         }
     }
 }
