@@ -10,7 +10,7 @@
   overflow: hidden;
   align-items: center;
   text-align: center;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)) url("../img/_MG_6311.jpg") center top;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url("../img/_MG_6311.jpg") center top;
   background-size: cover;
 }
 .home__name {
@@ -111,7 +111,7 @@ main .social-icons a {
   transition: all 0.5s ease-in-out;
 }
 main .social-icons a:hover {
-  color: rgb(192, 130, 255);
+  color: rgb(28, 137, 255);
 }
 
 footer {

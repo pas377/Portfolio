@@ -9,8 +9,8 @@
             to bottom,
             rgba($primary-color, 0.3),
             rgba($primary-color, 0)
-        )
-        url('dist/img/_MG_6311.jpg') center top;
+        ),
+        url('../img/_MG_6311.jpg') center top;
     background-size: cover;
 
     &__name {
