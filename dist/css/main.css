@@ -6,19 +6,19 @@
 
 .home {
   height: 100%;
-  padding-top: 40vh;
+  padding-top: 50vh;
   overflow: hidden;
   align-items: center;
   text-align: center;
-  background: url("../img/_MG_6069.jpg") center top;
+  background: linear-gradient(to top, black, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../img/_MG_6069.jpg") center top;
   background-size: contain;
   background-repeat: no-repeat;
 }
 .home__name {
   font-size: 5rem;
   padding-bottom: 1rem;
-  margin-top: 1rem;
-  border-bottom: 2px solid #fff;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid rgb(255, 145, 28);
 }
 .home__name--last {
   color: #fff;
@@ -101,6 +101,97 @@
 .nav .menu-nav.open {
   transform: translateY(0);
 }
+.nav .menu-nav__item {
+  transform: translateX(100vw);
+  transition: all 0.5s ease-in-out;
+}
+.nav .menu-nav__item.open {
+  transform: translateX(0);
+}
+.nav .menu-nav__item.active > a {
+  color: rgb(255, 145, 28);
+}
+.nav .menu-nav__link {
+  display: inline-block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 2rem 0;
+  font-weight: 300;
+  transition: all 0.5s ease-in-out;
+}
+.nav .menu-nav__link:hover {
+  color: rgb(23, 243, 255);
+}
+
+.menu-nav__item:nth-child(1) {
+  transition-delay: 0.25s;
+}
+
+.menu-nav__item:nth-child(2) {
+  transition-delay: 0.35s;
+}
+
+.menu-nav__item:nth-child(3) {
+  transition-delay: 0.45s;
+}
+
+.menu-nav__item:nth-child(4) {
+  transition-delay: 0.55s;
+}
+
+.about {
+  padding-bottom: 2rem;
+}
+.about h2:hover {
+  color: rgb(23, 243, 255);
+}
+.about__bio-image {
+  height: 50vh;
+  width: 100%;
+  background: linear-gradient(to top, black, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../img/_MG_6069.jpg") center top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.about__bio-image p {
+  margin-bottom: 2rem;
+}
+.about__bio {
+  width: 80%;
+  text-align: center;
+  border-bottom: 2px solid rgb(255, 145, 28);
+}
+.about__bio .text-secondary {
+  padding-bottom: 1rem;
+}
+.about .skills {
+  width: 60vw;
+  margin: 2rem auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+.about .skills__skill {
+  background: #1a1a1a;
+  padding: 0.5rem;
+  border-bottom: 5px solid rgb(23, 243, 255);
+}
+.about .skills__skill h2, .about .skills__skill h3 {
+  margin: 0.5rem 0;
+}
+.about .skills__skill h6 {
+  margin: 0.3rem 0;
+}
+.about .social-icons {
+  display: flex;
+  flex-direction: column;
+}
+.about footer {
+  transform: rotate(90deg) translate(-3rem, -5rem);
+}
 
 body {
   background: black;
@@ -114,9 +205,21 @@ h1, h2, h3 {
   font-weight: 400;
 }
 
+h2 {
+  font-weight: 400;
+}
+h2:hover {
+  color: rgb(255, 145, 28);
+  transition: all 0.5s ease-in-out;
+}
+
 a {
   color: #fff;
   text-decoration: none;
+}
+
+.text-secondary {
+  color: rgb(23, 243, 255);
 }
 
 header {

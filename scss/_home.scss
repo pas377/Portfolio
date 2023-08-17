@@ -1,10 +1,17 @@
 .home{
     height: 100%;
-    padding-top: 40vh;
+    padding-top: 50vh;
     overflow: hidden;
     align-items: center;
     text-align: center;
     background: 
+        linear-gradient(
+            to top,
+            rgba($primary-color, 4),
+            rgba($primary-color, 0.5),
+            rgba($primary-color, 0),
+            rgba($primary-color, 0)
+        ),
         url('../img/_MG_6069.jpg') center top;
     background-size: contain;
     background-repeat: no-repeat;
@@ -12,8 +19,8 @@
     &__name {
         font-size: 5rem;
         padding-bottom: 1rem;
-        margin-top: 1rem;
-        border-bottom: 2px solid set-text-color($primary-color);
+        margin-bottom: 1rem;
+        border-bottom: 2px solid $tertiary-color;
 
         &--last {
             color: set-text-color($primary-color);
