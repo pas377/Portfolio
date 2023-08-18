@@ -10,7 +10,7 @@
   overflow: hidden;
   align-items: center;
   text-align: center;
-  background: linear-gradient(to top, black, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../img/_MG_6069.jpg") center top;
+  background: linear-gradient(to top, black, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../img/br-phill.jpg") center top;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -148,7 +148,7 @@
 .about__bio-image {
   height: 50vh;
   width: 100%;
-  background: linear-gradient(to top, black, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../img/_MG_6069.jpg") center top;
+  background: linear-gradient(to top, black, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../img/br-phill.jpg") center top;
   background-size: contain;
   background-repeat: no-repeat;
   display: flex;
@@ -184,6 +184,51 @@
 }
 .about .skills__skill h6 {
   margin: 0.3rem 0;
+}
+.about .social-icons {
+  display: flex;
+  flex-direction: column;
+}
+.about footer {
+  transform: rotate(90deg) translate(-3rem, -5rem);
+}
+
+.about {
+  padding-bottom: 2rem;
+}
+.about h2:hover {
+  color: rgb(23, 243, 255);
+}
+.about__bio-image {
+  height: 50vh;
+  width: 100%;
+  background: linear-gradient(to top, black, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("img/_MG_6069.jpg") center top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.about__bio-image .text-secondary {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.about__items {
+  width: 60vw;
+  margin: 2rem auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+.about__item {
+  position: relative;
+  border-bottom: 5px solid rgb(23, 243, 255);
+  overflow: hidden;
+  cursor: pointer;
+}
+.about__item img {
+  width: 100%;
 }
 .about .social-icons {
   display: flex;

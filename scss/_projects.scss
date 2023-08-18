@@ -1,0 +1,64 @@
+.about {
+    padding-bottom: 2rem;
+
+    h2 {
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+
+    &__bio-image {
+        height: 50vh;
+        width: 100%;
+        background: 
+            linear-gradient(
+                to top,
+                rgba($primary-color, 4),
+                rgba($primary-color, 0),
+                rgba($primary-color, 0),
+                rgba($primary-color, 0)
+            ),
+            url('img/_MG_6069.jpg') center top;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+
+        .text-secondary {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+    
+    &__items {
+        width: 60vw;
+        margin: 2rem auto 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+    }
+
+    &__item {
+        position: relative;
+        border-bottom: 5px solid $secondary-color;
+        overflow: hidden;
+        cursor: pointer;
+
+        img {
+            width: 100%;
+        }
+    }
+    .social-icons {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    footer {
+        transform:
+            rotate(90deg)
+            translate(-3rem, -5rem);
+    }
+
+}
