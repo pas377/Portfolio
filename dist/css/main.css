@@ -193,16 +193,19 @@
   transform: rotate(90deg) translate(-3rem, -5rem);
 }
 
-.about {
+.projects {
   padding-bottom: 2rem;
 }
-.about h2:hover {
+.projects h2:hover {
   color: rgb(23, 243, 255);
 }
-.about__bio-image {
+.projects h1 {
+  color: rgb(255, 145, 28);
+}
+.projects__bio-image {
   height: 50vh;
   width: 100%;
-  background: linear-gradient(to top, black, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("img/_MG_6069.jpg") center top;
+  background: linear-gradient(to top, black, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../img/br-phill.jpg") center top;
   background-size: contain;
   background-repeat: no-repeat;
   display: flex;
@@ -210,31 +213,71 @@
   align-items: center;
   justify-content: flex-end;
 }
-.about__bio-image .text-secondary {
+.projects__bio-image .text-secondary {
   font-size: 2rem;
   margin-bottom: 2rem;
 }
-.about__items {
+.projects__items {
   width: 60vw;
   margin: 2rem auto 0 auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2rem;
 }
-.about__item {
+.projects__item {
   position: relative;
   border-bottom: 5px solid rgb(23, 243, 255);
   overflow: hidden;
   cursor: pointer;
 }
-.about__item img {
-  width: 100%;
+.projects__item img {
+  max-width: 400px;
+  max-height: 200px;
+  display: block;
+  margin: 0 auto;
 }
-.about .social-icons {
+.projects__item::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgb(23, 243, 255);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.projects__item:hover::after {
+  top: 0;
+  opacity: 0.9;
+}
+.projects__item:hover .projects__btn {
+  opacity: 1;
+}
+.projects__btns {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  text-align: center;
+}
+.projects__btn {
+  opacity: 0;
+  color: #000;
+  transition: all 0.5s ease-in-out;
+}
+.projects__btn:hover {
+  color: #fff;
+}
+.projects .social-icons {
   display: flex;
   flex-direction: column;
 }
-.about footer {
+.projects footer {
   transform: rotate(90deg) translate(-3rem, -5rem);
 }
 
