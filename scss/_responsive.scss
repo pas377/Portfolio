@@ -16,6 +16,8 @@
             &__item {
                 display: inline;
                 padding-right: 1.5rem;
+                background: rgba($primary-color, 0.8);
+                padding: 0.5rem;
             }
 
             &__link {
@@ -23,4 +25,22 @@
             }
         }
     }
+
+    .projects {
+        &__items {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .contact__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
+
+@include media-lg {
+    .contact__list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@include media-xl {}

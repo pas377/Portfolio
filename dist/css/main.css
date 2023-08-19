@@ -327,9 +327,22 @@
   .nav .menu-nav__item {
     display: inline;
     padding-right: 1.5rem;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 0.5rem;
   }
   .nav .menu-nav__link {
     font-size: 1.5rem;
+  }
+  .projects__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contact__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contact__list {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 body {
