@@ -281,6 +281,32 @@
   transform: rotate(90deg) translate(-3rem, -5rem);
 }
 
+.contact {
+  height: 100%;
+  padding-top: 50vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to top, black, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../img/br-phill.jpg") center top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.contact__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  font-size: 1.2rem;
+}
+.contact .social-icons {
+  position: initial;
+  margin-top: 2rem;
+}
+
 body {
   background: black;
   color: #fff;
