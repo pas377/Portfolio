@@ -7,7 +7,7 @@
         }
     }
     h1 {
-        color: $tertiary-color;
+        color: #fff;
     }
 
     &__bio-image {
@@ -45,7 +45,7 @@
 
     &__item {
         position: relative;
-        border-bottom: 5px solid $secondary-color;
+        border-bottom: 5px solid $tertiary-color;
         overflow: hidden;
         cursor: pointer;
 
@@ -55,6 +55,10 @@
             display: block;
             margin: 0 auto;
         }
+
+        &:nth-child(n+2):nth-child(-n+6) img {
+            filter: invert(100%);
+        }
         
         &::after {
             content: '';
@@ -63,7 +67,7 @@
             left: 0;
             height: 100%;
             width: 100%;
-            background: $secondary-color;
+            background: $tertiary-color;
             opacity: 0;
             @include transition-ease;
         }

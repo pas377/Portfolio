@@ -200,7 +200,7 @@
   color: rgb(23, 243, 255);
 }
 .projects h1 {
-  color: rgb(255, 145, 28);
+  color: #fff;
 }
 .projects__bio-image {
   height: 50vh;
@@ -226,7 +226,7 @@
 }
 .projects__item {
   position: relative;
-  border-bottom: 5px solid rgb(23, 243, 255);
+  border-bottom: 5px solid rgb(255, 145, 28);
   overflow: hidden;
   cursor: pointer;
 }
@@ -236,6 +236,9 @@
   display: block;
   margin: 0 auto;
 }
+.projects__item:nth-child(n+2):nth-child(-n+6) img {
+  filter: invert(100%);
+}
 .projects__item::after {
   content: "";
   position: absolute;
@@ -243,7 +246,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgb(23, 243, 255);
+  background: rgb(255, 145, 28);
   opacity: 0;
   transition: all 0.5s ease-in-out;
 }
@@ -307,6 +310,28 @@
   margin-top: 2rem;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    visibility: hidden;
+  }
+  .nav {
+    visibility: visible;
+  }
+  .nav .menu-nav {
+    display: block;
+    transform: translateY(0);
+    height: 100%;
+    background: transparent;
+    text-align: right;
+  }
+  .nav .menu-nav__item {
+    display: inline;
+    padding-right: 1.5rem;
+  }
+  .nav .menu-nav__link {
+    font-size: 1.5rem;
+  }
+}
 body {
   background: black;
   color: #fff;
