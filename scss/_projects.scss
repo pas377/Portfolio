@@ -56,10 +56,6 @@
             margin: 0 auto;
         }
 
-        &:nth-child(n+2):nth-child(-n+6) img {
-            filter: invert(100%);
-        }        
-        
         &::after {
             content: '';
             position: absolute;

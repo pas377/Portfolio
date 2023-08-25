@@ -236,9 +236,6 @@
   display: block;
   margin: 0 auto;
 }
-.projects__item:nth-child(n+2):nth-child(-n+6) img {
-  filter: invert(100%);
-}
 .projects__item::after {
   content: "";
   position: absolute;
